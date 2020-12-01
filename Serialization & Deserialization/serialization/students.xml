@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<root>
+    <stu1 type="dict">
+        <name type="str">John</name>
+        <class type="str">3A</class>
+        <year type="int">2019</year>
+    </stu1>
+    <stu2 type="dict">
+        <name type="str">Flix</name>
+        <class type="str">3B</class>
+        <year type="int">2019</year>
+    </stu2>
+    <stu3 type="dict">
+        <name type="str">Leah</name>
+        <class type="str">4C</class>
+        <year type="int">2020</year>
+    </stu3>
+</root>

@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<all>
+	<item type="dict">
+		<name type="str">John</name>
+		<Class type="str">3A</Class>
+		<year type="str">2019</year>
+	</item>
+	<item type="dict">
+		<name type="str">Flix</name>
+		<Class type="str">3B</Class>
+		<year type="str">2019</year>
+	</item>
+	<item type="dict">
+		<name type="str">Leah</name>
+		<Class type="str">4C</Class>
+		<year type="str">2020</year>
+	</item>
+</all>
