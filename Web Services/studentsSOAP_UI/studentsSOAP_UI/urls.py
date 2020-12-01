@@ -15,11 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from student_register import soap_views
+from student_register import soap_views, views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('student/list/', include('student_register.urls')),
     path('soap_api/', soap_views.student_soap),
+    path('client/', views.client),
 
 ]

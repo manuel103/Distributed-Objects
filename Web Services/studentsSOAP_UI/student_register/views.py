@@ -33,3 +33,18 @@ def student_delete(request, id):
     student.delete()
     return redirect('/student/list')
 
+# def client(request):
+#     context = {'student_details': Student.objects.all()}
+#     return render(request, "student_register/student_client.html", context)
+
+
+def client(request):
+    query = request.GET.get('search_res', None)
+    context = {}
+
+    if query and request.method == 'GET':
+        results = Student.objects.filter(student_id=query)
+        context.update({'results': results})
+
+    return render(request, 'student_register/student_client.html', context)
+
