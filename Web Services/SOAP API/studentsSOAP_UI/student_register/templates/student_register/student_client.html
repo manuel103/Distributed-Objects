@@ -1,0 +1,43 @@
+{% extends "student_register/base.html" %}
+
+{% block content %}
+
+<form id="searchform" method="get" action="" accept-charset="utf-8">
+  Search student by Id:
+  <input id="searchbox" name="search_res" type="text" placeholder="Search" />
+  <button type="submit" class="btn btn-primary">Search</button>
+
+</form>
+<table class="table table-borderless">
+
+ <thead class="border-bottom font-weight-bold">
+        <tr>
+            <td>Admission Number</td>
+            <td>Full Name</td>
+            <td>Phone Number</td>
+            <td>Email</td>
+            <td>Address</td>
+            <td>Entry Points</td>
+        </tr>
+    </thead>
+<tbody>
+  {% for student in results %}
+  <tr>
+    <td>{{student.student_id}}</td>
+    <td>{{student.fullname}}</td>
+    <td>{{student.phoneNumber}}</td>
+    <td>{{student.email}}</td>
+    <td>{{student.address}}</td>
+    <td>{{student.entryPoints}}</td>
+  </tr>
+  {% endfor %}
+</tbody>
+</table>
+
+<div class="col-md-4">
+            <a href="{% url 'student_list' %}" class="btn btn-secondary btn-block btn-lg">
+                <i class="fas fa-stream"></i> Home
+            </a>
+        </div>
+
+{% endblock content %}
